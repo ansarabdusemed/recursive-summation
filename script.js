@@ -7,8 +7,8 @@ function sum(arr, n) {
     else {
       //keep calling sum() until n = 0, 
       //sum is taking the arr param & decrementing the n
-      console.log(sum(arr, n - 1) + arr[n - 1]);
+      return sum(arr, n - 1) + arr[n - 1];
     }
   }
   
-sum([1, 2, 3, 4, 5,], 4);  
+sum([2, 3, 4, 5], 3)
